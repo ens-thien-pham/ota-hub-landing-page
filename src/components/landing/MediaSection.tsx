@@ -50,7 +50,7 @@ export function MediaSection({ copy }: MediaSectionProps) {
 					<Reveal delayMs={140}>
 						<Card className="rounded-3xl border bg-card/70 p-4 backdrop-blur">
 							<Image
-								src={withBasePath("/images/ota-hub-preview.svg")}
+								src={withBasePath("/images/ota-demo-2.gif")}
 								alt={copy.media.alt}
 								width={1600}
 								height={1000}

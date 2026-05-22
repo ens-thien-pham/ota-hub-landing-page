@@ -120,7 +120,7 @@ export function Hero({ copy }: HeroProps) {
 					<div className="pointer-events-none absolute inset-0 -z-10 rounded-[2.25rem] bg-primary/10 blur-3xl" />
 					<div className="rounded-[2.25rem] border bg-card/70 p-4 shadow-xl backdrop-blur">
 						<Image
-							src={withBasePath("/images/ota-hub-preview.svg")}
+							src={withBasePath("/images/ota-demo-2.gif")}
 							alt={copy.media.alt}
 							width={1600}
 							height={1000}
