@@ -74,7 +74,7 @@ export function Hero({ copy }: HeroProps) {
 							size="lg"
 							className={cn(
 								"rounded-full px-10",
-								"shadow-lg hover:shadow-xl",
+								"shadow-lg ghover:shadow-xl",
 								"transition-all hover:-translate-y-0.5",
 							)}
 						>
