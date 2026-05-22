@@ -2,6 +2,7 @@ import { Reveal } from "@/components/landing/Reveal";
 import { SectionHeading } from "@/components/landing/SectionHeading";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card } from "@/components/ui/card";
+import { withBasePath } from "@/lib/base-path";
 import type { LandingCopy } from "@/lib/ota-hub-copy";
 
 type TeamProps = {
@@ -27,7 +28,7 @@ export function Team({ copy }: TeamProps) {
 								<div className="flex items-center gap-4">
 									<Avatar className="size-12 rounded-2xl">
 										{p.image ? (
-											<AvatarImage src={p.image} alt="@team" />
+											<AvatarImage src={withBasePath(p.image)} alt="@team" />
 										) : (
 											<AvatarFallback className="rounded-2xl font-heading">
 												{p.name.slice(0, 2).toUpperCase()}

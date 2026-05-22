@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { withBasePath } from "@/lib/base-path";
 import type { LandingCopy, Locale } from "@/lib/ota-hub-copy";
 import { cn } from "@/lib/utils";
 
@@ -119,7 +120,7 @@ export function Hero({ copy }: HeroProps) {
 					<div className="pointer-events-none absolute inset-0 -z-10 rounded-[2.25rem] bg-primary/10 blur-3xl" />
 					<div className="rounded-[2.25rem] border bg-card/70 p-4 shadow-xl backdrop-blur">
 						<Image
-							src="/images/ota-hub-preview.svg"
+							src={withBasePath("/images/ota-hub-preview.svg")}
 							alt={copy.media.alt}
 							width={1600}
 							height={1000}

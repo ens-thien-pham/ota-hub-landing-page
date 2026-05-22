@@ -1,7 +1,9 @@
 import Image from "next/image";
+
 import { Reveal } from "@/components/landing/Reveal";
 import { SectionHeading } from "@/components/landing/SectionHeading";
 import { Card } from "@/components/ui/card";
+import { withBasePath } from "@/lib/base-path";
 import type { LandingCopy } from "@/lib/ota-hub-copy";
 
 type MediaSectionProps = {
@@ -48,7 +50,7 @@ export function MediaSection({ copy }: MediaSectionProps) {
 					<Reveal delayMs={140}>
 						<Card className="rounded-3xl border bg-card/70 p-4 backdrop-blur">
 							<Image
-								src="/images/ota-hub-preview.svg"
+								src={withBasePath("/images/ota-hub-preview.svg")}
 								alt={copy.media.alt}
 								width={1600}
 								height={1000}

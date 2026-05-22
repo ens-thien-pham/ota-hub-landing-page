@@ -5,6 +5,7 @@ import Link from "next/link";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";
+import { withBasePath } from "@/lib/base-path";
 import type { LandingCopy, Locale } from "@/lib/ota-hub-copy";
 import { cn } from "@/lib/utils";
 
@@ -45,7 +46,7 @@ export function Header({ lang, copy }: HeaderProps) {
 					<span className="relative grid size-9 place-items-center overflow-hidden rounded-full border bg-card shadow-sm">
 						<span className="absolute inset-0 rounded-full bg-primary/10" />
 						<Image
-							src="/images/ota-hub-logo.svg"
+							src={withBasePath("/images/ota-hub-logo.svg")}
 							alt="OTA Hub logo"
 							width={36}
 							height={36}
